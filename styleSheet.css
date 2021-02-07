@@ -1,0 +1,165 @@
+﻿body {
+    background-color: #1f1f1f;
+    background-image: linear-gradient(#161616,  #1f1f1f, #1f1f1f, #1f1f1f,  #161616);
+}
+
+#fonts {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Laila', serif;
+    font-family: 'Kalam', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    color: #e6d051;
+    padding-left: 20px;
+    font-family: 'Laila', serif;
+    letter-spacing: 1.5px;
+}
+
+h4 {
+    font-family: 'Laila', serif;
+    margin: 0;
+    font-size: 20px;
+}
+
+b, a {
+    color: white;
+    text-decoration-line: none;
+}
+
+strong.tall {
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
+footer {
+    display: flex;
+}
+
+
+
+section {
+    display: flex;
+    max-width: 1440px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 400px;
+}
+
+div {
+    max-width: 1440px;
+    display: block;
+
+    color: #adadad;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.2;
+}
+
+div.hello {
+    padding: 0 600px;
+    padding-top: 100px;
+}
+
+div.intro {
+    /*text-align: left;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;*/
+    padding: 0 120px;
+    padding-bottom: 150px;
+    max-width: 1440px;
+    display: flex;
+}
+
+div.title {
+    margin-right: 80px;
+    color: #e6d051;
+    font-size: 30px;
+    font-family: 'Laila', serif;
+    min-width: 160px;
+    text-align: right;
+}
+
+div.about {
+    padding-top: 22px;
+    max-width: 800px;
+}
+
+div.skill {
+    display: flex;
+    padding-top: 35px;
+}
+div.skillElement {
+    padding-right: 50px;
+    line-height: 1.4;
+}
+
+div.project {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+}
+a.projectImg {
+    max-width: 450px;
+    max-height: 253px;
+    padding-right: 50px;
+}
+div.projectDesc {
+    font-size: 16px;
+    max-width: 380px;
+}
+
+div.footerTxt {
+    font-size: 16px;
+    max-width: 115px;
+    padding: 30px;
+}
+
+
+
+
+#intro {
+    color: #cacaca;
+    font-size: 40px;
+    font-family: 'Laila', serif;
+
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    max-width: 900px;
+
+    padding-left: 50px;
+}
+
+#faceImg {
+    border: 0px solid #000;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+}
+
+#project1 {
+    content: url('Projects/Images/ETP.png');
+}
+#project1:hover {
+    content: url('Projects/Images/ETPGameplay.gif');
+}
+
+#project2 {
+    content: url('Projects/Images/Split.png');
+}
+
+#project2:hover {
+    content: url('Projects/Images/SplitGameplay.gif');
+}
