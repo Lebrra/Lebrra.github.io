@@ -110,8 +110,8 @@ div.project {
     display: flex;
 }
 a.projectImg {
-    max-width: 450px;
-    max-height: 253px;
+    width: 450px;
+    height: 253px;
     padding-right: 50px;
 }
 div.projectDesc {
@@ -124,7 +124,15 @@ div.footerTxt {
     max-width: 115px;
     padding: 30px;
 }
-
+div.socials {
+    margin-left: auto;
+    margin-right: 100px;
+}
+a.socialLink {
+    width: 80px;
+    height: 80px;
+    padding: 0 10px;
+}
 
 
 
@@ -132,13 +140,11 @@ div.footerTxt {
     color: #cacaca;
     font-size: 40px;
     font-family: 'Laila', serif;
-
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
     position: relative;
     max-width: 900px;
-
     padding-left: 50px;
 }
 
@@ -159,7 +165,23 @@ div.footerTxt {
 #project2 {
     content: url('Projects/Images/Split.png');
 }
-
 #project2:hover {
     content: url('Projects/Images/SplitGameplay.gif');
+}
+
+
+#icon1{
+    content: url('SocialIcons/mail.png');
+}
+#icon2 {
+    content: url('SocialIcons/itch.png');
+}
+#icon3 {
+    content: url('SocialIcons/linkedin.png');
+}
+#icon4 {
+    content: url('SocialIcons/github.png');
+}
+#icon5 {
+    content: url('SocialIcons/twitter.png');
 }
