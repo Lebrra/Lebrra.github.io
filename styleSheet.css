@@ -134,6 +134,14 @@ a.socialLink {
     padding: 0 10px;
 }
 
+a.faceLink {
+    content: url('faceCircle.png');
+    border: 0px solid #000;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+}
+
 
 
 #intro {
@@ -156,17 +164,17 @@ a.socialLink {
 }
 
 #project1 {
-    content: url('Projects/Images/ETP.png');
+    content: url('Projects/ETP.png');
 }
 #project1:hover {
-    content: url('Projects/Images/ETPGameplay.gif');
+    content: url('Projects/ETPGameplay.gif');
 }
 
-#project2 {
-    content: url('Projects/Images/Split.png');
+#project2, #jam9 {
+    content: url('Projects/Split.png');
 }
-#project2:hover {
-    content: url('Projects/Images/SplitGameplay.gif');
+#project2:hover, #jam9:hover {
+    content: url('Projects/SplitGameplay.gif');
 }
 
 
@@ -184,4 +192,105 @@ a.socialLink {
 }
 #icon5 {
     content: url('SocialIcons/twitter.png');
+}
+
+/* Jams List */
+#jam1 {
+    content: url('GameJams/FarFromHome.png');
+}
+#jam1:hover {
+    content: url('GameJams/FarFromHome.gif');
+}
+
+#jam2 {
+    content: url('GameJams/CosmicConflict.png');
+}
+#jam2:hover {
+    content: url('GameJams/CosmicConflict.gif');
+}
+
+#jam3 {
+    content: url('GameJams/BotBoy.png');
+}
+#jam3:hover {
+    content: url('GameJams/BotBoy.gif');
+}
+
+#jam4 {
+    content: url('GameJams/CaveOfUncertainty.png');
+}
+#jam4:hover {
+    content: url('GameJams/CaveOfUncertainty.gif');
+}
+
+#jam5 {
+    content: url('GameJams/SystemOverload.png');
+}
+#jam5:hover {
+    content: url('GameJams/SystemOverload.gif');
+}
+
+#jam6 {
+    content: url('GameJams/CardConquest.png');
+}
+#jam6:hover {
+    content: url('GameJams/CardConquest.gif');
+}
+
+#jam7 {
+    content: url('GameJams/Guppy.png');
+}
+#jam7:hover {
+    content: url('GameJams/Guppy.gif');
+}
+
+#jam8 {
+    content: url('GameJams/CastleRepair.png');
+}
+#jam8:hover {
+    
+}
+
+/*Split reused*/
+
+#jam10 {
+    content: url('GameJams/IndianaDuck.png');
+}
+#jam10:hover {
+    content: url('GameJams/IndianaDuck.gif');
+}
+
+#jam11 {
+    content: url('GameJams/CastleSiege.png');
+}
+#jam11:hover {
+    content: url('GameJams/CastleSiege.gif');
+}
+
+#jam12 {
+    content: url('GameJams/AnotherLeftTurn.png');
+}
+#jam12:hover {
+    content: url('GameJams/AnotherLeftTurn.gif');
+}
+
+#jam13 {
+    content: url('GameJams/CritterParty.png');
+}
+#jam13:hover {
+    content: url('GameJams/CritterParty.gif');
+}
+
+#jam14 {
+    content: url('GameJams/VRGame.png');
+}
+#jam14:hover {
+    
+}
+
+#jam15 {
+    content: url('GameJams/DoggoRescue.png');
+}
+#jam15:hover {
+    content: url('GameJams/DoggoRescue.gif');
 }
