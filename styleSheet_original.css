@@ -1,7 +1,4 @@
-﻿@media screen and (max-width: 481px) {
-}
-
-body {
+﻿body {
     background-color: #1f1f1f;
     background-image: linear-gradient(#161616,  #1f1f1f, #1f1f1f, #1f1f1f,  #161616);
 }
@@ -53,9 +50,9 @@ section {
     display: flex;
     max-width: 1440px;
     justify-content: flex-start;
-    margin-top: 5.3%;   /*100, 200, 400*/
-    margin-bottom: 11%;
-    margin-left: 21.2%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 400px;
 }
 
 div {
@@ -69,17 +66,17 @@ div {
 }
 
 div.hello {
-    /*padding: 0 600px;
-    padding-top: 100px;*/
-    padding: 0 32%;
-    padding-top: 5.3%;
+    padding: 0 600px;
+    padding-top: 100px;
 }
 
 div.intro {
-    /*padding: 0 120px;
-    padding-bottom: 150px;*/
-    padding: 0 6%;
-    padding-bottom: 7%;
+    /*text-align: left;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;*/
+    padding: 0 120px;
+    padding-bottom: 150px;
     max-width: 1440px;
     display: flex;
 }
@@ -100,7 +97,7 @@ div.about {
 
 div.skill {
     display: flex;
-    padding-top: 5.4%;
+    padding-top: 35px;
 }
 div.skillElement {
     padding-right: 50px;
@@ -114,7 +111,7 @@ div.project {
 }
 a.projectImg {
     width: 450px;
-    height: 254px;
+    height: 253px;
     padding-right: 50px;
 }
 div.projectDesc {
@@ -132,8 +129,8 @@ div.socials {
     margin-right: 100px;
 }
 a.socialLink {
-    max-width: 80px;
-    max-height: 80px;
+    width: 80px;
+    height: 80px;
     padding: 0 10px;
 }
 
