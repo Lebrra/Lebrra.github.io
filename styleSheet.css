@@ -211,10 +211,10 @@ a.otherImg {
     content: url('Projects/ETPGameplay.gif');
 }
 
-#project5, #jam2 {
+#project4, #jam2 {
     content: url('GameJams/CosmicConflict.png');
 }
-#project5:hover, #jam2:hover{
+#project4:hover, #jam2:hover{
     content: url('GameJams/CosmicConflict.gif');
 }
 
