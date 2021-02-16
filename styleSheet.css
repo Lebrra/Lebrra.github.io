@@ -134,7 +134,7 @@ div.socials {
     margin-left: auto;
     /*margin-right: 100px;*/
     margin-right: 5.3%;
-    min-width: 550px;
+    min-width: 630px;
 }
 a.socialLink {
     max-width: 80px;
@@ -235,6 +235,9 @@ a.otherImg {
 }
 #icon5 {
     content: url('SocialIcons/twitter.png');
+}
+#icon6 {
+    content: url('SocialIcons/resume.png');
 }
 
 
