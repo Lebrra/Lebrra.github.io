@@ -150,6 +150,18 @@ a.faceLink {
     padding: 20px;
 }
 
+div.otherProjects {
+    display: flex;
+    min-height: 350px;
+    width: 1000px;
+}
+
+a.otherImg {
+    width: 225px;
+    height: 127px;
+    padding-right: 30px;
+}
+
 
 
 #intro {
@@ -171,6 +183,13 @@ a.faceLink {
     padding: 20px;
 }
 
+#italics {
+    font-size: 18px;
+}
+
+
+
+/* Projects: */
 #project1 {
     content: url('Projects/ETP.png');
 }
@@ -185,7 +204,23 @@ a.faceLink {
     content: url('Projects/SplitGameplay.gif');
 }
 
+#project3 {
+    content: url('Projects/ETP.png');
+}
+#project3:hover {
+    content: url('Projects/ETPGameplay.gif');
+}
 
+#project5, #jam2 {
+    content: url('GameJams/CosmicConflict.png');
+}
+#project5:hover, #jam2:hover{
+    content: url('GameJams/CosmicConflict.gif');
+}
+
+
+
+/* Icons: */
 #icon1{
     content: url('SocialIcons/mail.png');
 }
@@ -203,9 +238,31 @@ a.faceLink {
 }
 
 
-#italics{
-    font-size: 18px;
+
+/* Other Projects: */
+#otherProject1 {
+    content: url('Projects/FightingFoliage.png');
 }
+
+#otherProject2 {
+    content: url('Projects/ARWarhawk.png');
+}
+
+#otherProject3 {
+    content: url('Projects/ClockWatchers.jpeg');
+}
+
+#otherText {
+    display: none;
+    font-size: 15px;
+    width: 225px;
+}
+
+a.otherImg:hover + #otherText {
+    display: block;
+}
+
+
 
 /* Jams List */
 #jam1 {
@@ -215,12 +272,12 @@ a.faceLink {
     content: url('GameJams/FarFromHome.gif');
 }
 
-#jam2 {
+/*#jam2 {
     content: url('GameJams/CosmicConflict.png');
 }
 #jam2:hover {
     content: url('GameJams/CosmicConflict.gif');
-}
+}*/
 
 #jam3 {
     content: url('GameJams/BotBoy.png');
@@ -237,7 +294,7 @@ a.faceLink {
 }
 
 #jam5 {
-    content: url('GameJams/SystemOverload.png');
+    content: url('GameJams/SystemOverload.PNG');
 }
 #jam5:hover {
     content: url('GameJams/SystemOverload.gif');
@@ -258,7 +315,7 @@ a.faceLink {
 }
 
 #jam8 {
-    content: url('GameJams/brokenImage2.png');
+    content: url('GameJams/CastleRepair.PNG');
 }
 #jam8:hover {
     content: url('GameJams/CastleRepair.png');
