@@ -48,9 +48,9 @@ footer {
 
 section {
     display: flex;
-    max-width: 1440px;
+    max-width: 1440px; /*75%*/
     justify-content: flex-start;
-    margin-top: 5.3%;   /*100, 200, 400*/
+    margin-top: 5.3%; 
     margin-bottom: 11%;
     margin-left: 21.2%;
 }
@@ -78,6 +78,7 @@ div.intro {
     padding: 0 6%;
     padding-bottom: 7%;
     max-width: 1440px;
+    min-width: 1440px;
     display: flex;
 }
 
@@ -93,6 +94,7 @@ div.title {
 div.about {
     padding-top: 22px;
     max-width: 800px;
+    min-width: 800px;
 }
 
 div.skill {
@@ -117,16 +119,21 @@ a.projectImg {
 div.projectDesc {
     font-size: 16px;
     max-width: 380px;
+    min-width: 380px;
 }
 
 div.footerTxt {
     font-size: 16px;
     max-width: 115px;
+    min-width: 115px;
     padding: 30px;
+    margin-right: 200px;
 }
 div.socials {
     margin-left: auto;
-    margin-right: 100px;
+    /*margin-right: 100px;*/
+    margin-right: 5.3%;
+    min-width: 550px;
 }
 a.socialLink {
     max-width: 80px;
