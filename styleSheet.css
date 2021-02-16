@@ -1,7 +1,4 @@
-﻿@media screen and (max-width: 481px) {
-}
-
-body {
+﻿body {
     background-color: #1f1f1f;
     background-image: linear-gradient(#161616,  #1f1f1f, #1f1f1f, #1f1f1f,  #161616);
 }
@@ -100,7 +97,7 @@ div.about {
 
 div.skill {
     display: flex;
-    padding-top: 5.4%;
+    padding-top: 35px;
 }
 div.skillElement {
     padding-right: 50px;
@@ -288,7 +285,7 @@ a.faceLink {
     content: url('GameJams/VRGame.png');
 }
 #jam14:hover {
-    
+    content: url('GameJams/VRGame.gif');
 }
 
 #jam15 {
