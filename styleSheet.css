@@ -208,7 +208,7 @@ a.otherImg {
     content: url('Projects/Valhalla.png');
 }
 #project3:hover {
-    content: url('Projects/ETPGameplay.gif');
+    content: url('Projects/Valhalla.gif');
 }
 
 #project4, #jam2 {
@@ -323,7 +323,7 @@ a.otherImg:hover + #text3 {
     content: url('GameJams/CastleRepair.PNG');
 }
 #jam8:hover {
-    content: url('GameJams/CastleRepair.png');
+    content: url('GameJams/CastleRepair.gif');
 }
 
 /*Split reused*/
