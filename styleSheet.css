@@ -232,7 +232,7 @@ a.faceLink {
 }
 
 #jam5 {
-    content: url('GameJams/SystemOverload_Copy.png');
+    content: url('GameJams/brokenImage1.png');
 }
 #jam5:hover {
     content: url('GameJams/SystemOverload.gif');
@@ -253,10 +253,10 @@ a.faceLink {
 }
 
 #jam8 {
-    content: url('GameJams/CastleRepair_Copy.png');
+    content: url('GameJams/brokenImage2.png');
 }
 #jam8:hover {
-    content: url('GameJams/CastleRepair.png');
+    
 }
 
 /*Split reused*/
