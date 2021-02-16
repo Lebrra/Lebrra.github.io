@@ -89,6 +89,7 @@ div.title {
     font-family: 'Laila', serif;
     min-width: 160px;
     text-align: right;
+    margin-bottom: 10%;
 }
 
 div.about {
