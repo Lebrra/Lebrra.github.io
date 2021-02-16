@@ -202,6 +202,11 @@ a.faceLink {
     content: url('SocialIcons/twitter.png');
 }
 
+
+#italics{
+    font-size: 18px;
+}
+
 /* Jams List */
 #jam1 {
     content: url('GameJams/FarFromHome.png');
@@ -232,7 +237,7 @@ a.faceLink {
 }
 
 #jam5 {
-    content: url('GameJams/brokenImage1.png');
+    content: url('GameJams/SystemOverload.png');
 }
 #jam5:hover {
     content: url('GameJams/SystemOverload.gif');
@@ -256,7 +261,7 @@ a.faceLink {
     content: url('GameJams/brokenImage2.png');
 }
 #jam8:hover {
-    
+    content: url('GameJams/CastleRepair.png');
 }
 
 /*Split reused*/
