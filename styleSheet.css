@@ -162,6 +162,16 @@ a.otherImg {
     padding-right: 30px;
 }
 
+a.gjLink {
+    font-family: 'Laila', serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #3b3b3b;
+    color: #adadad;
+    border-radius: 5px;
+}
+
 
 
 #intro {
