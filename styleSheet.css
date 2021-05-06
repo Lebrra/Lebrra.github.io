@@ -55,6 +55,10 @@ section {
     margin-left: 21.2%;
 }
 
+section.secondRow {
+    margin-bottom: 5.3%;
+}
+
 div {
     max-width: 1440px;
     display: block;
@@ -265,6 +269,10 @@ a.gjLink {
     content: url('Projects/ClockWatchers.jpeg');
 }
 
+#otherProject4 {
+    content: url('Projects/GameDataGrab.png');
+}
+
 p.otherText {
     display: none;
     font-size: 15px;
@@ -278,6 +286,9 @@ a.otherImg:hover + #text2 {
     display: block;
 }
 a.otherImg:hover + #text3 {
+    display: block;
+}
+a.otherImg:hover + #text4 {
     display: block;
 }
 
