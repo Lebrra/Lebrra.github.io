@@ -232,7 +232,19 @@ a.gjLink {
     content: url('GameJams/CosmicConflict.gif');
 }
 
+#project5 {
+    content: url('Projects/OPG.png');
+}
+#project5:hover {
+    content: url('Projects/OPGGameplay.gif');
+}
 
+#project6 {
+    content: url('Projects/WI.png');
+}
+#project6:hover {
+    content: url('Projects/WIGameplay.gif');
+}
 
 /* Icons: */
 #icon1{
@@ -392,4 +404,11 @@ a.otherImg:hover + #text4 {
 }
 #jam15:hover {
     content: url('GameJams/DoggoRescue.gif');
+}
+
+#jam16 {
+    content: url('GameJams/DimentionShifter.png');
+}
+#jam16:hover {
+    content: url('GameJams/DimentionShifter.gif');
 }

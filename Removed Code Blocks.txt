@@ -1,0 +1,17 @@
+Split Project Block:
+
+<div class="project">
+	<a id="project2" class="projectImg" href="https://wesmcw.itch.io/split" target="_blank"></a>
+        <div class="projectDesc">
+        	<h4><a href="https://wesmcw.itch.io/split" target="_blank">Split</a> - Game Jam Continuation</h4>
+                <p>
+                	Spilt is a local co-op puzzle game created during a 48 hour game jam.
+                        This project was continued, won Best in Show at the 2020 UW-Whitewater MAGD Expo, and was submitted to IndieCade!
+               </p>
+               <p>
+                        I created the mirror effect in the background of both player screens, as well as the functionality of the title menus.
+                        I also created the endless mode, which is unlocked after getting all the collectibles in every level!
+              </p>
+              <p><strong>- Spring 2020</strong></p>
+       </div>
+</div>
