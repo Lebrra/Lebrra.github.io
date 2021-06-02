@@ -247,7 +247,7 @@ a.gjLink {
 }
 
 /* Icons: */
-#icon1{
+#icon1 {
     content: url('SocialIcons/mail.png');
 }
 #icon2 {
@@ -269,18 +269,18 @@ a.gjLink {
 
 
 /* Other Projects: */
+#otherProject0 {
+    content: url('Projects/ReferenceWork.png');
+}
 #otherProject1 {
     content: url('Projects/FightingFoliage.png');
 }
-
 #otherProject2 {
     content: url('Projects/ARWarhawk.png');
 }
-
 #otherProject3 {
     content: url('Projects/ClockWatchers.jpeg');
 }
-
 #otherProject4 {
     content: url('Projects/GameDataGrab.png');
 }
