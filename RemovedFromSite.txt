@@ -1,0 +1,15 @@
+<div class="project">
+                <a id="project5" class="projectImg" href="https://lebrra.itch.io/online-party-game" target="_blank"></a>
+                <div class="projectDesc">
+                    <h4><a href="https://lebrra.itch.io/online-party-game" target="_blank">Online Party Game</a> - Senior Project</h4>
+                    <p>
+                        Online Party Game explains itself; it is a Mario Party-inspired online board game for 2-6 players. 
+                        The game's current state is fairly simple, but we left a lot of room for additions and improvments coming this summer.
+                    </p>
+                    <p>
+                        Using Wisconsin (below) as a reference, I wanted to challenge myself with another online game. 
+                        With the foundation set, I plan on testing the limits of real-time online connectivity within the minigames. 
+                    </p>
+                    <p><strong>- Spring/Summer 2021</strong></p>
+                </div>
+            </div>
