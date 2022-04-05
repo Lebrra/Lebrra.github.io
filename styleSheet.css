@@ -422,3 +422,10 @@ a.otherImg:hover + #text4 {
 #jam17:hover {
     content: url('GameJams/RollingBy.gif');
 }
+
+#jam18 {
+    content: url('GameJams/FTT.png');
+}
+#jam18:hover {
+    content: url('GameJams/FTT.gif');
+}
