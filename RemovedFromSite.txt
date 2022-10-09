@@ -13,3 +13,35 @@
                     <p><strong>- Spring/Summer 2021</strong></p>
                 </div>
             </div>
+
+<div class="project">
+                <a id="project6" class="projectImg" href="https://lebrra.itch.io/wisconsin" target="_blank"></a>
+                <div class="projectDesc">
+                    <h4><a href="https://lebrra.itch.io/wisconsin" target="_blank">Wisconsin</a> - Independent Project</h4>
+                    <p>
+                        Wisconsin is an online card game based off my family card game called Michigan.
+                        I created this project with my professor Dr. Nick Hwang to give my family a way to play their card game remotely during COVID-19.
+                    </p>
+                    <p>
+                        Together we learned a lot about server integration in Unity. We plan on getting Wisconsin to app stores as soon as possible.
+                    </p>
+                    <p><strong>- Fall 2020/Spring 2021</strong></p>
+                </div>
+            </div>
+
+<div class="project">
+                <a id="project4" class="projectImg" href="https://lebrra.itch.io/cosmic-conflict" target="_blank"></a>
+                <div class="projectDesc">
+                    <h4><a href="https://lebrra.itch.io/cosmic-conflict" target="_blank">Cosmic Conflict</a> - Mobile App</h4>
+                    <p>
+                        Cosmic Conflict started as a three-person game jam. We continued our little endless
+                        tower-defense into a fully developed app on <br />the
+                        <a href="https://apps.apple.com/us/app/cosmic-conflict/id1481998011" target="_blank" title="View on App Store">Apple App Store</a> and
+                        <a href="https://play.google.com/store/apps/details?id=com.FightingFoliage.CosmicConflict&hl=en_US" target="_blank" title="View on Google Play Store">Google Play Store</a>.
+                    </p>
+                    <p>
+                        I created the enemy spawners, shop, and player upgrades. This was my first time working with mobile, and I would love to work on more!
+                    </p>
+                    <p><strong>- 2019</strong></p>
+                </div>
+            </div>

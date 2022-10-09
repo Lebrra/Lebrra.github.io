@@ -249,6 +249,14 @@ a.gjLink {
     content: url('Projects/WIGameplay.gif');
 }
 
+#project7 {
+    content: url('Projects/PeoplesPie.png');
+}
+
+    #project7:hover {
+        content: url('Projects/PeoplesPie.gif');
+    }
+
 /* Icons: */
 #icon1 {
     content: url('SocialIcons/mail.png');
