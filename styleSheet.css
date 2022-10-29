@@ -437,3 +437,10 @@ a.otherImg:hover + #text4 {
 #jam18:hover {
     content: url('GameJams/FTT.gif');
 }
+
+#jam19 {
+    content: url('GameJams/CraftChim.png');
+}
+#jam19:hover {
+    content: url('GameJams/CraftChim.gif');
+}
