@@ -444,3 +444,11 @@ a.otherImg:hover + #text4 {
 #jam19:hover {
     content: url('GameJams/CraftChim.gif');
 }
+
+#jam20 {
+    content: url('GameJams/Pau.png');
+}
+
+    #jam20:hover {
+        content: url('GameJams/Pau.gif');
+    }
