@@ -21,6 +21,7 @@ h4 {
     font-family: 'Laila', serif;
     margin: 0;
     font-size: 20px;
+    color: #b8a289;
 }
 
 b, a {
@@ -113,13 +114,18 @@ div.skillElement {
 
 div.project {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     display: flex;
 }
 a.projectImg {
     width: 450px;
     height: 254px;
     padding-right: 50px;
+}
+a.projectTitle{
+    font-size: 24px;
+    line-height: 1.6;
+    font-style: italic;
 }
 div.projectDesc {
     font-size: 16px;
@@ -156,7 +162,7 @@ a.faceLink {
 
 div.otherProjects {
     display: flex;
-    min-height: 350px;
+    min-height: 310px;
     width: 1000px;
 }
 
@@ -257,6 +263,20 @@ a.gjLink {
     content: url('Projects/PeoplesPie.gif');
 }
 
+#project8 {
+    content: url('Projects/RoboCo.jpg');
+}
+#project8:hover {
+    content: url('Projects/RoboCo.gif');
+}
+
+#project9 {
+    content: url('Projects/MindfulMarket.png');
+}
+#project9:hover {
+    content: url('Projects/MindfulMarket.gif');
+}
+
 /* Icons: */
 #icon1 {
     content: url('SocialIcons/mail.png');
@@ -296,8 +316,14 @@ a.gjLink {
     content: url('Projects/GameDataGrab.png');
 }
 
-p.otherText {
+p.hiddenText {
     display: none;
+    font-size: 15px;
+    width: 225px;
+}
+
+#headerText { 
+    display: block;
     font-size: 15px;
     width: 225px;
 }
