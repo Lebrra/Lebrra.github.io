@@ -478,6 +478,20 @@ a.otherImg:hover + #text4 {
     content: url('GameJams/Pau.gif');
 }
 
+#jam21 {
+    content: url('GameJams/OverTheTop.png');
+}
+#jam21:hover {
+    content: url('GameJams/OverTheTop.gif');
+}
+
+#jam22 {
+    content: url('GameJams/PinSki.png');
+}
+#jam22:hover {
+    content: url('GameJams/PinSki.gif');
+}
+
 /* All Projects List */
 #allProject1 {
     content: url('GameJams/FarFromHome.png');
