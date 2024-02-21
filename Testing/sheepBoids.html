@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SHEEP</title>
+</head>
+
+<body>
+    <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas><br/>
+    Speed: <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" /><br/>
+    <button id="add">Add 10</button><button id="clear">Clear</button><br/><br/>
+
+    <b>Sheep Behavior Distribution:</b><br/>
+    Random Steering:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0.5" id="random" />&nbsp; <a id="randomVal">50%</a><br/>
+    Rotate to Neighbor:     &nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="to" />&nbsp; <a id="toVal">0%</a><br/>
+    Rotate with Neighbor:   <input type="range" width="100px" min="0" max="1" step=".05" value="0" id="with" />&nbsp; <a id="withVal">0%</a><br/>
+    Avoid my Neighbor:      &nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="away" />&nbsp; <a id="awayVal">0%</a><br/>
+    Go Straight:    <a id="nothingVal">50%</a>
+
+    <script src="sheepBoids.js" type="module" defer></script>
+</body>
+
+</html>
+
