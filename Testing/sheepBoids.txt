@@ -1,0 +1,33 @@
+Steering Behaviors:
+
+- General Notes - 
+
+- By default, sheep are set to randomly rotate (50%) or go straight (50%).
+- If the speed slider is set to 0, behaviors are disabled and sheep will stand still.
+- Regardless of the selected behavior(s), the sheep will always detect collisions on walls and each other. 
+
+
+- Mouse Behavior -
+
+If a mouse is within the canvas, the sheep will go directly to the mouse position; this overrides all other steering behaviors.
+
+
+- Steering Behaviors -
+
+There are 5 different steering types when a mouse is not present. These can be adjusted using the four Sheep Behavior Distribution sliders, which add up to a max of 100% (5% increments). Any leftover percent goes to the Go Straight behavior. With these distributions, a behavior will be selected randomly weighted by the slider values.
+
+1. Random Steering
+Sheep hold a direction (1 or -1) value that has a 10% chance to swap whenever this behavior is selected. Using this direction, it randomly selects 0-10 degrees to rotate during this given frame. This gives a good amount of randomness without being too jittery.
+
+2. Rotate to Neighbor
+Sheep will rotate directly towards its closest found neighbor. This will cause lots of collisions within the herd.
+
+3. Rotate with Neighbor
+("alignment" steering) This is my take on the expected boid behavior; sheep will try to match their closest neighbor's direction. I did not calculate an average direction among the herd, but I could have here.
+
+4. Avoid my Neighbor
+("seperation" steering) Sheep will try to avoid their closest neighbor.
+
+5. Go Straight
+Simply goes straight; only applies velocity changes on collisions.
+note: this behavior doesn't have its own slider - this is the remaining value leftover from the sliders (if not at 100% already)

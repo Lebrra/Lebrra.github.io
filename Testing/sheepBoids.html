@@ -3,21 +3,38 @@
 
 <head>
     <title>SHEEP</title>
+    <link rel="stylesheet" href="../styleSheet.css"/>
 </head>
 
 <body>
-    <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas><br/>
-    Speed: <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" /><br/>
-    <button id="add">Add 10</button><button id="clear">Clear</button><br/><br/>
+    <div class="about">
+        <h1>SHEEP</h1>
+    </div>
+    <div>
+        <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas><br/>
+        Speed: <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" /><br/>
+        <button id="add">Add 10</button><button id="clear">Clear</button><br/><br/>
 
-    <b>Sheep Behavior Distribution:</b><br/>
-    Random Steering:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0.5" id="random" />&nbsp; <a id="randomVal">50%</a><br/>
-    Rotate to Neighbor:     &nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="to" />&nbsp; <a id="toVal">0%</a><br/>
-    Rotate with Neighbor:   <input type="range" width="100px" min="0" max="1" step=".05" value="0" id="with" />&nbsp; <a id="withVal">0%</a><br/>
-    Avoid my Neighbor:      &nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="away" />&nbsp; <a id="awayVal">0%</a><br/>
-    Go Straight:    <a id="nothingVal">50%</a>
+        <b>Sheep Behavior Distribution:</b><br/>
+        Random Steering:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0.5" id="random" />&nbsp; <a id="randomVal">50%</a><br/>
+        Rotate to Neighbor:     &nbsp;&nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="to" />&nbsp; <a id="toVal">0%</a><br/>
+        Rotate with Neighbor:   <input type="range" width="100px" min="0" max="1" step=".05" value="0" id="with" />&nbsp; <a id="withVal">0%</a><br/>
+        Avoid my Neighbor:      &nbsp;&nbsp;&nbsp;<input type="range" width="100px" min="0" max="1" step=".05" value="0" id="away" />&nbsp; <a id="awayVal">0%</a><br/>
+        Go Straight:    <a id="nothingVal">50%</a>
+    </div>
+    <div class="about">
+        <iframe
+            title="Sheep Boids - Details"
+            src="../Testing/sheepBoids.txt"
+            class="includebox"
+            width="100%"
+            height="100%"
+            scrolling="yes"
+            frameborder="0"
+        ></iframe>
+    </div>
 
-    <script src="sheepBoids.js" type="module" defer></script>
+        <script src="sheepBoids.js" type="module" defer></script>
 </body>
 
 </html>
