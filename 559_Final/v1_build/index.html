@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=600 height=600 tabindex="-1" style="width: 600px; height: 600px; background: #454445"></canvas>
-    <script src="Build/v1_build.loader.js"></script>
+    <script src="Build/officalBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/v1_build.data.unityweb",
-        frameworkUrl: "Build/v1_build.framework.js.unityweb",
-        codeUrl: "Build/v1_build.wasm.unityweb",
+        dataUrl: "Build/officalBuild.data.unityweb",
+        frameworkUrl: "Build/officalBuild.framework.js.unityweb",
+        codeUrl: "Build/officalBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Leah",
         productName: "BrickBreak",
