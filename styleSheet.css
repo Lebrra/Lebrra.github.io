@@ -101,6 +101,7 @@ div.about {
     padding-top: 22px;
     max-width: 800px;
     min-width: 800px;
+    line-height: 150%;
 }
 
 div.skill {
@@ -183,6 +184,12 @@ a.gjLink {
     border-radius: 5px;
 }
 
+strong.ww {
+    color: #a99db8;
+}
+strong.mad {
+    color: #c29d9d;
+}
 
 
 #intro {
@@ -206,10 +213,6 @@ a.gjLink {
 
 #italics {
     font-size: 18px;
-}
-
-#jobLink {
-    color: #dbcd7d;
 }
 
 
@@ -493,6 +496,13 @@ a.otherImg:hover + #text4 {
 }
 #jam22:hover {
     content: url('GameJams/PinSki.gif');
+}
+
+#jam23 {
+    content: url('GameJams/Clown.png');
+}
+#jam23:hover {
+    content: url('GameJams/Clown.gif');
 }
 
 /* All Projects List */
