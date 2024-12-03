@@ -49,3 +49,8 @@ li {
 .keycode {
     color: #a79b5c;
 }
+
+a {
+    color: rgb(233, 223, 133);
+    text-decoration-line: none;
+}
