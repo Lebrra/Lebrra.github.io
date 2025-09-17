@@ -1,38 +1,88 @@
-.App {
+/*font details*/
+
+.cabin-sketch-regular {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cabin-sketch-bold {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cabin-uniquifier {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* main page */
+
+body {
+    background-color: #1f1f1f;
+    background-image: linear-gradient(#161616,  #1f1f1f, #1f1f1f, #1f1f1f,  #161616);
+}
+
+div.hello {
+    font-size: 50px;
+    color: #e6d051;
+    font-family: 'Cabin Sketch', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 20px 32%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+div.intro {
+  vertical-align: middle;
+}
+
+.faceLink {
+  padding: 50px;
+  vertical-align: middle;
+}
+
+/*Intro text within intro*/
+#intro {
+  color: #cacaca;
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 50px;
+}
+
+#center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#right {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  color: #e6d051;
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 10%;
+  margin-right: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: 'Fira Sans', sans-serif;
+  color: #cacaca;
 }
