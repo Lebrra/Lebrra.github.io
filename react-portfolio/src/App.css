@@ -1,5 +1,10 @@
 /*font details*/
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+
+/* These aren't really being used, but here for ref*/
 .cabin-sketch-regular {
   font-family: "Cabin Sketch", sans-serif;
   font-weight: 400;
@@ -18,7 +23,8 @@
   font-weight: weight;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
+  letter-spacing: 1px;
 }
 
 .fira-sans-regular {
@@ -30,44 +36,18 @@
 
 /* main page */
 
+/* General Use*/
 body {
     background-color: #1f1f1f;
     background-image: linear-gradient(#161616,  #1f1f1f, #1f1f1f, #1f1f1f,  #161616);
 }
 
-div.hello {
-    font-size: 50px;
-    color: #e6d051;
-    font-family: 'Cabin Sketch', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    padding: 20px 32%;
-    padding-top: 8%;
-    padding-bottom: 5%;
-}
-
-div.intro {
-  vertical-align: middle;
-}
-
-.faceLink {
-  padding: 50px;
-  vertical-align: middle;
-}
-
-/*Intro text within intro*/
-#intro {
-  color: #cacaca;
-  font-size: 30px;
-  font-family: 'Cabin', sans-serif;
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 50px;
-}
-
 #center {
   text-align: center;
+}
+
+#left {
+  text-align: left;
 }
 
 #right {
@@ -80,9 +60,93 @@ div.intro {
   font-family: 'Cabin', sans-serif;
   margin-bottom: 10%;
   margin-right: 50px;
+  text-shadow: 2px 2px 3px #000000, 5px 5px 9px #000000;
 }
 
 p {
   font-family: 'Fira Sans', sans-serif;
   color: #cacaca;
+  letter-spacing: 0.1px;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.text-emphasis {
+  font-size: 120%;
+  color: #e6d051;
+  font-family: 'Cabin Sketch', sans-serif;
+  letter-spacing: 110%;
+}
+
+.text-block-spacer {
+  margin-top: 200px
+}
+
+/*Intro*/
+div.hello {
+    font-size: 50px;
+    color: #e6d051;
+    font-family: 'Cabin Sketch', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 20px 32%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    text-shadow: 2px 2px 1px #000000, 5px 5px 9px #000000;
+}
+
+div.intro {
+  vertical-align: middle;
+}
+
+.faceLink {
+  vertical-align: middle;
+  border-radius: 100%;
+  box-shadow: 0px 0px 40px black;
+}
+
+/*Intro text within intro*/
+#intro {
+  color: #cacaca;
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 50px;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.about-text {
+  padding-top: 1%;
+}
+
+/*Skills*/
+.skills-col {
+  padding-top: 1%;
+  min-width: 15%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+.skills-col-squish {
+  margin-bottom: 9%;
+  text-align: center;
+}
+
+.skills-header {
+  font-size: 130%;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  text-shadow: 2px 2px 3px #000000, 5px 5px 9px #000000;
+  letter-spacing: 110%;
+  padding-bottom: 20px;
+}
+
+.skills-text {
+  font-family: 'Fira Sans', sans-serif;
+  color: #cacaca;
+  letter-spacing: 0.1px;
+  text-shadow: 2px 2px 10px #000000;
+  line-height: 170%;
 }

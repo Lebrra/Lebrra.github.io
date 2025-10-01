@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Intro from './Portfolio/Intro';
 import About from './Portfolio/About';
+import Skills from './Portfolio/Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Intro />
-    <div style={{marginTop: "200px"}}/>
+    <div className="text-block-spacer"/>
     <About />
-    <div style={{marginTop: "200px"}}/>
+    <div className="text-block-spacer"/>
+    <Skills />
+    <div className="text-block-spacer"/>
   </React.StrictMode>
 );

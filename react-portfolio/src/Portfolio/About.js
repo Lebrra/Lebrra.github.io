@@ -33,10 +33,10 @@ function About() {
 
   return <Container>
         <Row>
-            <Col className="header" id={align} sm={12} md={4}>
+            <Col className="header" id={align} sm={12} md={3}>
                 About Me
             </Col>
-            <Col>
+            <Col className="about-text">
                 <p>
                     I finished up my final semester at <strong class="ww">University of Wisconsin - Whitewater</strong> in 2021
                     <br />where I graduated with a Bachelor of Science triple-majoring in:

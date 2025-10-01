@@ -9,12 +9,14 @@ function Intro() {
         </div>
         <div className="intro">
             <Container>
-            <Row className="align-items-center">
-                <Col sm={12} md={5} lg={4}>
-                <Image src={face} className="faceLink" href="https://lebrra.github.io/" title="Home Page" alt='Leah Icon' fluid/>
+            <Row className="align-items-center" style={{gap: "50px"}}>
+                <Col sm={12} md={5} lg={3}>
+                <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
+                    <Image src={face} className="faceLink" alt='Leah Icon' fluid/>
+                </a>
                 </Col>
                 <Col id='intro'>
-                My name is <b>Leah Blasczyk</b>;<br />
+                My name is <span className="text-emphasis">Leah Blasczyk</span>;<br />
                 I am a Game Engineer with an emphasis in UI/UX and 
                 a passion for board games, crafts, and video games!
                 </Col>
