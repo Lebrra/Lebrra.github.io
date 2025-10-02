@@ -7,7 +7,6 @@ function Skills() {
     const [screenSize, setScreenSize] = useState('');
     useEffect(() => {
       const handleResize = () => {
-        // You can define your own breakpoints here
         if (window.innerWidth < 576) {
           setScreenSize('xs');
         } else if (window.innerWidth < 768) {
@@ -40,42 +39,42 @@ function Skills() {
             </Col>
 
             <Col className={squishCols} sm={12} md={3} xl={1}>
-                <Row className="skills-header">
+                <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Languages
                 </Row>
-                <Row className="skills-text">C#</Row>
-                <Row className="skills-text">C++/C</Row>
-                <Row className="skills-text">Python</Row>
-                <Row className="skills-text">JavaScript</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>C#</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>C++/C</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Python</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>JavaScript</Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1}>
-                <Row className="skills-header">
+                <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Engine/Programs
                 </Row>
-                <Row className="skills-text">Unity</Row>
-                <Row className="skills-text">Visual Studio Code</Row>
-                <Row className="skills-text">JetBrains Rider</Row>
-                <Row className="skills-text">Unreal Engine 4</Row>
-                <Row className="skills-text">Adobe Suite</Row>
-                <Row className="skills-text">Blender/Maya</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Unity</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Visual Studio Code</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>JetBrains Rider</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Unreal Engine 4</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Adobe Suite</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Blender/Maya</Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1} style={{marginLeft: addMargin}}>
-                <Row className="skills-header">
+                <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Tools
                 </Row>
-                <Row className="skills-text">Git</Row>
-                <Row className="skills-text">Jira</Row>
-                <Row className="skills-text">GitLab CI</Row>
-                <Row className="skills-text">Jenkins</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Git</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Jira</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>GitLab CI</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Jenkins</Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1}>
-                <Row className="skills-header">
+                <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Proficiencies
                 </Row>
-                <Row className="skills-text">User Interface/Experience</Row>
-                <Row className="skills-text">Gameplay</Row>
-                <Row className="skills-text">Accessibility/WCAG</Row>
-                <Row className="skills-text">Devops</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>User Interface/Experience</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Gameplay</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Accessibility/WCAG</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Devops</Row>
             </Col>
         </Row>
     </Container>
