@@ -6,14 +6,12 @@ import tweet from './LinkIcons/twitter.png';
 import resume from './LinkIcons/resume.png';
 import arrow from './LinkIcons/arrow.png';
 import { Container, Row, Col, Image, Navbar } from "react-bootstrap";
-import { Animated } from "react-native";
 import '../App.css';
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 function Links() {
     const [openNav, setOpenNav] = useState(false);
     const [screenSize, setScreenSize] = useState('');
-    const rotateAnim = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
       const handleResize = () => {
@@ -38,14 +36,6 @@ function Links() {
       };
     }, []);
 
-    useEffect(() => {
-        Animated.timing(rotateAnim, {
-            toValue: openNav ? 90 : 10,
-            duration: 1000,
-            useNativeDriver: true
-        }).start();
-    }, [openNav]);
-
     var vertical = screenSize === 'xs' || screenSize === 'sm' || screenSize === 'md';
 
     // fun open animations
@@ -69,47 +59,45 @@ function Links() {
         rotate: `${openNav ? -90 : 0}deg`
     };
 
-    console.log(rotateAnim);
-
   return openNav ?  
         <div className="fixed-bottom">
             <Navbar>
                 <Container style={{justifyContent: "flex-end"}}>
                 <Row style={vertical ? expandVertical : expandHorizontal}>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={email} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="mailto:scout1665@gmail.com" title="Email Leah">
+                        <Image src={email} className="link-img" alt='Email' fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={itch} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="https://lebrra.itch.io/" target='_blank' rel="noreferrer" title="Leah's itch.io page">
+                        <Image src={itch} className="link-img" alt="itch.io" fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={linkedin} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="https://www.linkedin.com/in/leah-blasczyk-0b25b3198/" target='_blank' rel="noreferrer" title="Leah on LinkedIn">
+                        <Image src={linkedin} className="link-img" alt='LinkedIn' fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={github} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="https://github.com/Lebrra" target='_blank' rel="noreferrer" title="Leah's GitHub page">
+                        <Image src={github} className="link-img" alt='GitHub' fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={tweet} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="https://twitter.com/lebrra_" target='_blank' rel="noreferrer" title="Leah on Twitter">
+                        <Image src={tweet} className="link-img" alt='Twitter' fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
-                        <Image src={resume} className="link-img" alt='Leah Icon' fluid/>
+                    <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
+                        <Image src={resume} className="link-img" alt='Resume' fluid/>
                     </a>
                     </Col>
                     <Col xs={4} sm={2} lg={1}>
-                    <Animated.View style={arrowState}>
-                        <Image src={arrow} className="link-img" alt='Leah Icon' title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
-                    </Animated.View>
+                    <div style={arrowState}>
+                        <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
+                    </div>
                     </Col>
                 </Row>
                 </Container>
@@ -121,9 +109,9 @@ function Links() {
                 <Container style={{justifyContent: "flex-end"}}>
                 <Row style={vertical ? expandVertical : expandHorizontal}>
                     <Col xs={4} sm={2} lg={1}>
-                    <Animated.View style={arrowState}>
-                        <Image src={arrow} className="link-img" alt='Leah Icon' title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
-                    </Animated.View>
+                    <div style={arrowState}>
+                        <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
+                    </div>
                     </Col>
                 </Row>
                 </Container>

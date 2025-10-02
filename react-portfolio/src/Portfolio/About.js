@@ -49,7 +49,7 @@ function About() {
                     I loved pushing my self to be a part of something great. I love video games, and I have always wanted to be the one behind a game that brings someone joy.
                 </p>
                 <p>
-                    I am currently a <strong>Game Engineer</strong> at <strong><a id="jobLink" href="https://www.filamentgames.com/" target="_blank">Filament Games</a></strong>! 
+                    I am currently a <strong>Game Engineer</strong> at <strong><a id="jobLink" href="https://www.filamentgames.com/" target="_blank" rel="noreferrer">Filament Games</a></strong>! 
                     We make 'Games for Good' that help children, students, patients, and people better their lives through games.
                 </p>
                 <p>
