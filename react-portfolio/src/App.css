@@ -151,6 +151,11 @@ div.intro {
   line-height: 170%;
 }
 
+/*Projects*/
+.project-block {
+  text-shadow: 2px 2px 3px #000000, 5px 5px 9px #000000;
+}
+
 /*Footer*/
 .link-img {
   border-radius: 100%;

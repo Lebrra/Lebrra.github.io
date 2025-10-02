@@ -4,6 +4,7 @@ import './index.css';
 import Intro from './Portfolio/Intro';
 import About from './Portfolio/About';
 import Skills from './Portfolio/Skills';
+import Games from './Portfolio/GameProjects';
 import Links from './Portfolio/Links';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,6 +16,8 @@ root.render(
     <About />
     <div className="text-block-spacer"/>
     <Skills />
+    <div className="text-block-spacer"/>
+    <Games />
     <div className="text-block-spacer"/>
 
     <Links />
