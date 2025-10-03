@@ -12,8 +12,8 @@ import { useState, useEffect } from "react";
 function Links() {
     const [openNav, setOpenNav] = useState(false);
     const [screenSize, setScreenSize] = useState('');
+    const [animating, setAnimating] = useState(false);
     const [delayedOpenNav, setDelayedOpenNav] = useState(false);
-    var timer = null; 
 
     useEffect(() => {
       const handleResize = () => {
@@ -39,15 +39,21 @@ function Links() {
     }, []);
 
     function updateOpen(state){
-        if (timer === null) clearTimeout(timer);
+        if (animating) return;
+
         setOpenNav(state);
+        setAnimating(true);
+
         if (state){
             setDelayedOpenNav(true);
+            setTimeout(() => {
+                setAnimating(false);
+            }, 300);
         }
         else {
-            timer = setTimeout(() => {
+            setTimeout(() => {
                 setDelayedOpenNav(false);
-                timer = null;
+                setAnimating(false);
             }, 300);
         }
     }
@@ -83,14 +89,14 @@ function Links() {
     };
 
     const iconGrowStateHor = {
-        transition: "0.3s ease-in-out",
         marginRight: `${openNav ? 0 : -8.5}%`,
         opacity: `${openNav ? 100 : 0}%`,
+        transition: "margin-right 0.5s cubic-bezier(0.51,-0.23,0.54,1.26), opacity 0.5s ease-in-out"
     }
     const iconGrowStateVert = {
-        transition: "0.3s ease-in-out",
         marginBottom: `${openNav ? 0 : -15}%`,
         opacity: `${openNav ? 100 : 0}%`,
+        transition: "margin-bottom 0.5s cubic-bezier(0.51,-0.23,0.54,1.26),  opacity 0.5s ease-in-out",
     }
 
     function ExpandedIcons(){
