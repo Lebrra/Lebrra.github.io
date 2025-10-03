@@ -12,6 +12,8 @@ import { useState, useEffect } from "react";
 function Links() {
     const [openNav, setOpenNav] = useState(false);
     const [screenSize, setScreenSize] = useState('');
+    const [delayedOpenNav, setDelayedOpenNav] = useState(false);
+    var timer = null; 
 
     useEffect(() => {
       const handleResize = () => {
@@ -36,6 +38,20 @@ function Links() {
       };
     }, []);
 
+    function updateOpen(state){
+        if (timer === null) clearTimeout(timer);
+        setOpenNav(state);
+        if (state){
+            setDelayedOpenNav(true);
+        }
+        else {
+            timer = setTimeout(() => {
+                setDelayedOpenNav(false);
+                timer = null;
+            }, 300);
+        }
+    }
+
     var vertical = screenSize === 'xs' || screenSize === 'sm' || screenSize === 'md';
 
     // fun open animations
@@ -43,6 +59,7 @@ function Links() {
         justifyContent: "flex-end", 
         columnWidth: "auto", 
         width: "100%", 
+        height: "100px",
         marginBottom: "1%", 
         flexDirection: 'row', 
         gap: "0px"
@@ -55,63 +72,89 @@ function Links() {
         flexDirection: 'column', 
         gap: "15px"
     };
-    const arrowState = {
+
+    const arrowStateHor = {
+        transition: "0.3s ease-in-out",
         rotate: `${openNav ? -90 : 0}deg`
     };
+    const arrowStateVert = {
+        transition: "0.3s ease-in-out",
+        rotate: `${openNav ? 0 : 90}deg`
+    };
 
-  return openNav ?  
-        <div className="fixed-bottom">
+    const iconGrowStateHor = {
+        transition: "0.3s ease-in-out",
+        marginRight: `${openNav ? 0 : -8.5}%`,
+        opacity: `${openNav ? 100 : 0}%`,
+    }
+    const iconGrowStateVert = {
+        transition: "0.3s ease-in-out",
+        marginBottom: `${openNav ? 0 : -15}%`,
+        opacity: `${openNav ? 100 : 0}%`,
+    }
+
+    function ExpandedIcons(){
+        return <>
+            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="mailto:scout1665@gmail.com" title="Email Leah">
+                    <Image src={email} className="link-img" alt='Email' fluid/>
+                </a> : <></>
+            }  
+            </Col>
+            <Col xs={4} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="https://lebrra.itch.io/" target='_blank' rel="noreferrer" title="Leah's itch.io page">
+                    <Image src={itch} className="link-img" alt="itch.io" fluid/>
+                </a> : <></>
+            }
+            </Col>
+            <Col xs={4} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="https://www.linkedin.com/in/leah-blasczyk-0b25b3198/" target='_blank' rel="noreferrer" title="Leah on LinkedIn">
+                    <Image src={linkedin} className="link-img" alt='LinkedIn' fluid/>
+                </a> : <></>
+            }
+            </Col>
+            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="https://github.com/Lebrra" target='_blank' rel="noreferrer" title="Leah's GitHub page">
+                    <Image src={github} className="link-img" alt='GitHub' fluid/>
+                </a> : <></>
+            }
+            </Col>
+            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="https://twitter.com/lebrra_" target='_blank' rel="noreferrer" title="Leah on Twitter">
+                    <Image src={tweet} className="link-img" alt='Twitter' fluid/>
+                </a> : <></>
+            }
+            </Col>
+            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            {
+                delayedOpenNav ? 
+                <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
+                    <Image src={resume} className="link-img" alt='Resume' fluid/>
+                </a> : <></>
+            }
+            </Col>
+        </>
+    }
+
+  return <div className="fixed-bottom">
             <Navbar>
                 <Container style={{justifyContent: "flex-end"}}>
                 <Row style={vertical ? expandVertical : expandHorizontal}>
+                    {ExpandedIcons()}
                     <Col xs={4} sm={2} lg={1}>
-                    <a href="mailto:scout1665@gmail.com" title="Email Leah">
-                        <Image src={email} className="link-img" alt='Email' fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <a href="https://lebrra.itch.io/" target='_blank' rel="noreferrer" title="Leah's itch.io page">
-                        <Image src={itch} className="link-img" alt="itch.io" fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <a href="https://www.linkedin.com/in/leah-blasczyk-0b25b3198/" target='_blank' rel="noreferrer" title="Leah on LinkedIn">
-                        <Image src={linkedin} className="link-img" alt='LinkedIn' fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <a href="https://github.com/Lebrra" target='_blank' rel="noreferrer" title="Leah's GitHub page">
-                        <Image src={github} className="link-img" alt='GitHub' fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <a href="https://twitter.com/lebrra_" target='_blank' rel="noreferrer" title="Leah on Twitter">
-                        <Image src={tweet} className="link-img" alt='Twitter' fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
-                        <Image src={resume} className="link-img" alt='Resume' fluid/>
-                    </a>
-                    </Col>
-                    <Col xs={4} sm={2} lg={1}>
-                    <div style={arrowState}>
-                        <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
-                    </div>
-                    </Col>
-                </Row>
-                </Container>
-            </Navbar>
-        </div>
-        :
-        <div className="fixed-bottom">
-            <Navbar>
-                <Container style={{justifyContent: "flex-end"}}>
-                <Row style={vertical ? expandVertical : expandHorizontal}>
-                    <Col xs={4} sm={2} lg={1}>
-                    <div style={arrowState}>
-                        <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => setOpenNav(!openNav)}/>
-                    </div>
+                        <div style={vertical ? arrowStateVert : arrowStateHor}>
+                            <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => updateOpen(!openNav)}/>
+                        </div>
                     </Col>
                 </Row>
                 </Container>
