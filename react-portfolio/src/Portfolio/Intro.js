@@ -2,8 +2,10 @@ import face from './faceCircle.png';
 import { Container, Row, Col, Image } from "react-bootstrap";
 import '../App.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Intro() {
+    const nav = useNavigate();
     const [faceHover, setFaceHover] = useState(false);
 
     const hoverStyle = {
@@ -23,7 +25,7 @@ function Intro() {
             <Container>
             <Row className="align-items-center" style={{gap: "50px"}}>
                 <Col sm={12} md={5} lg={3}>
-                <a href="https://lebrra.github.io/" target='__blank' title="Home Page">
+                <a onClick={() => nav("/")} title="Home Page">
                     <Image src={face} className="faceLink" alt='Leah Icon' fluid style={faceHover ? hoverStyle : defStyle} onMouseEnter={() => setFaceHover(true)} onMouseLeave={() => setFaceHover(false)}/>
                 </a>
                 </Col>

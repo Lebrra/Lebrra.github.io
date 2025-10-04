@@ -90,11 +90,28 @@ function Project(params) {
                       }
                     </p>
                     <div style={dividerStyle}/>
-                    <p className='project-header'>Dates:</p>
-                    <ul>
-                      <li>{params.Date}</li>
-                    </ul>
-                    <div style={dividerStyle}/>
+                    {
+                      "JamDetails" in params ? 
+                      <>
+                      <p className='project-header'>Details:</p>
+                      <ul>
+                        {
+                          params.JamDetails.map((c, i) => <li key={i}>{c}</li>)
+                        }
+                      </ul>
+                      <div style={dividerStyle}/>
+                      </> : <></>
+                    }
+                    {
+                      "Date" in params ? 
+                      <>
+                      <p className='project-header'>Dates:</p>
+                      <ul>
+                        <li>{params.Date}</li>
+                      </ul>
+                      <div style={dividerStyle}/>
+                      </> : <></>
+                    }
                     {
                       params.Platforms.length > 0 ? <>
                       <p className='project-header'>Platforms:</p>

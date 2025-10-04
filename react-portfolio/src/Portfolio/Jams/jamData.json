@@ -1,0 +1,602 @@
+[
+    {
+        "id": "23",
+        "Title": "Untitled Clown Game",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "Clown.png",
+            "Clown.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "Unfinished 2.5D horror game with jokes on the radio.",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Make Me Laugh",
+            "Date: January 26-28, 2024",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "22",
+        "Title": "Pin-Ski",
+        "Subtitle": "MadHacks Fall 2023",
+        "Images": [
+            "PinSki.png",
+            "PinSki.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/pin-ski"
+            },
+            {
+                "Name": "View on DevPost",
+                "url": "https://devpost.com/software/pin-ski"
+            }
+        ],
+        "Details": "Pinball + Skiball minigame! This is one of the first times I worked completely solo.",
+        "Platforms": [
+            "WebGL",
+            "Android (local download)"
+        ],
+        "JamDetails": [
+            "Date: November 11-12, 2023",
+            "Duration: 24 hours"
+        ]
+    },
+    {
+        "id": "21",
+        "Title": "Over the TopHat*",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "OverTheTop.png",
+            "OverTheTop.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "Had launcher-platformer made in Godot. Originally we wanted to replicate the pole-vaulting mechanics of 'Getting Over It' but quickly learned that was too hard for a jam.",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Time",
+            "Date: October 6-8, 2023",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "20",
+        "Title": "Pau",
+        "Subtitle": "Global Game Jam 2023",
+        "Images": [
+            "Pau.png",
+            "Pau.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/pau"
+            },
+            {
+                "Name": "View on GlobalGameJam",
+                "url": "https://globalgamejam.org/2023/games/pau-3"
+            }
+        ],
+        "Details": "3D root-growing survival game.",
+        "Platforms": [
+            "WebGL",
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Roots",
+            "Date: February 2-4, 2023",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "19",
+        "Title": "Crafted Chimera",
+        "Subtitle": "IGDA Foundation Game Jam 2022",
+        "Images": [
+            "CraftChim.png",
+            "CraftChim.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/crafted-chimera"
+            }
+        ],
+        "Details": "Creature-builder and -battler with over 1 million combinations!",
+        "Platforms": [
+            "WebGL",
+            "Android (local download)"
+        ],
+        "JamDetails": [
+            "Theme: Combination",
+            "Date: October 17-28, 2022",
+            "Duration: 11 days"
+        ]
+    },
+    {
+        "id": "18",
+        "Title": "Food Truck Tycoon",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "FTT.png",
+            "FTT.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/ftt"
+            }
+        ],
+        "Details": "Food Truck Simulator. This is inspired by the long-gone lemonade stand game on iOS.",
+        "Platforms": [
+            "WebGL",
+            "Android (local download)",
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Chain Reaction",
+            "Date: April 1-3, 2022",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "17",
+        "Title": "Rolling By",
+        "Subtitle": "Global Game Jam 2022",
+        "Images": [
+            "RollingBy.png",
+            "RollingBy.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://wesmcw.itch.io/rollingby"
+            },
+            {
+                "Name": "View on GlobalGameJam",
+                "url": "https://globalgamejam.org/2022/games/rolling-3"
+            }
+        ],
+        "Details": "Ball-rolling puzzle game. My favorite part about this one is that the main menu itself is a puzzle!",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Duality",
+            "Date: January 28-30, 2022",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "16",
+        "Title": "102.9 Dimention Shifter",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "DimentionShifter.png",
+            "DimentionShifter.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "Idle puzzle platformer.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Transmission/Shatter",
+            "Date: March 5-7, 2021",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "15",
+        "Title": "Lead the Way",
+        "Subtitle": "Global Game Jam 2021",
+        "Images": [
+            "DoggoRescue.png",
+            "DoggoRescue.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://squidmyers33.itch.io/doggo-rescue"
+            },
+            {
+                "Name": "View on GlobalGameJam",
+                "url": "https://globalgamejam.org/2021/games/doggo-rescue-7"
+            }
+        ],
+        "Details": "3D exploration clicker. I really love how this one turned out, even though the game itself is really simple!",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Lost and Found",
+            "Date: January 29-31, 2021",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "14",
+        "Title": "VR Packing Sim",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "VRGame.png",
+            "VRGame.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "VR Amazon packing simulator. This was our second attempt at VR, and this time we ended with something playable!",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Reindeer/Recursive",
+            "Date: December 4-6, 2020",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "13",
+        "Title": "Critter Party",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "CritterParty.png",
+            "CritterParty.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "Online card game for 2-6 players.",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Limit",
+            "Date: October 23-25, 2020",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "12",
+        "Title": "Another Left Turn",
+        "Subtitle": "Ludum Dare 47",
+        "Images": [
+            "AnotherLeftTurn.png",
+            "AnotherLeftTurn.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://lebrra.itch.io/another-left-turn"
+            },
+            {
+                "Name": "Download on LudumDare",
+                "url": "https://ldjam.com/events/ludum-dare/47/$227188"
+            }
+        ],
+        "Details": "FPS stuck in an endless loop with randomized weapons every other room!\nThis Jam inspired several Indie games I am a fan of today (Loop Hero!) and I think that is really neat that I was there too.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Stuck in a Loop",
+            "Date: October 2-5, 2020",
+            "Duration: 72 hours"
+        ]
+    },
+    {
+        "id": "11",
+        "Title": "Castle Siege",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "CastleSiege.png",
+            "CastleSiege.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://wesmcw.itch.io/castle-siege"
+            }
+        ],
+        "Details": "An 'Auto Checkers' made by two programmers.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Evolution",
+            "Date: June 2020",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "10",
+        "Title": "Indiana Duck",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "IndianaDuck.png",
+            "IndianaDuck.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://lebrra.itch.io/indiana-duck"
+            }
+        ],
+        "Details": "3D Adventure of the Duck with the Quack of Courage.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Meme/Discovery",
+            "Date: April 24-26, 2020",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "9",
+        "Title": "Split",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "Split.png",
+            "SplitGameplay.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://wesmcw.itch.io/split"
+            },
+            {
+                "Name": "View Winners from MAGD Expo",
+                "url": "https://magdexpo.com/spring-2020-games/"
+            }
+        ],
+        "Details": "Split-Screen(hah) or two-player puzzle platformer. We originally wanted to build a physical gaming cabinet to play this game with (and still do)!\nSplit was awarded Best in Show in the 2020 MAGD Expo at UW-Whitewater and was submitted to IndieCade!",
+        "Platforms": [
+            "WebGL",
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Nihilism",
+            "Date: February 28 - March 2, 2020",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "8",
+        "Title": "Castle Repair",
+        "Subtitle": "Global Game Jam 2020",
+        "Images": [
+            "CastleRepair.PNG",
+            "CastleRepair.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://lebrra.itch.io/castle-repair"
+            },
+            {
+                "Name": "View on GlobalGameJam",
+                "url": "https://globalgamejam.org/2020/games/castle-repair-4"
+            }
+        ],
+        "Details": "2-4 player couch battle royal with cards and ninjas.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: Repair",
+            "Date: January 31 - February 2, 2020",
+            "Duration: 48 hours",
+            "Requires Controllers"
+        ]
+    },
+    {
+        "id": "7",
+        "Title": "Guppy",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "Guppy.png",
+            "Guppy.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "Randomly generated dungeon crawler where you can undergo 'metamorphosis'",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Meta",
+            "Date: December 6-8, 2019",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "6",
+        "Title": "Card Conquest",
+        "Subtitle": "UW Whitewater Hackathon",
+        "Images": [
+            "CardConquest.png",
+            "CardConquest.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://wesmcw.itch.io/card-conquest"
+            }
+        ],
+        "Details": "Digital card game made overnight! This game was awarded first place in the developmental category of the Hackathon.",
+        "Platforms": [
+            "WebGL",
+            "Windows PC"
+        ],
+        "JamDetails": [
+            "Date: November 15-16, 2019",
+            "Duration: 16 hours"
+        ]
+    },
+    {
+        "id": "5",
+        "Title": "System Overload",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "SystemOverload.PNG",
+            "SystemOverload.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/system-overload"
+            }
+        ],
+        "Details": "Traditional tower defense.",
+        "Platforms": [
+            "WebGL"
+        ],
+        "JamDetails": [
+            "Theme: Simulation",
+            "Date: October 18-20, 2019",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "4",
+        "Title": "Cave of Uncertainty",
+        "Subtitle": "Community Game Jam 2019",
+        "Images": [
+            "CaveOfUncertainty.png",
+            "CaveOfUncertainty.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://wesmcw.itch.io/cave-of-uncertainty"
+            },
+            {
+                "Name": "View on GameJam itch.io",
+                "url": "https://itch.io/jam/cgj/rate/477135"
+            }
+        ],
+        "Details": "Puzzling clicker riddled with lies! I did the 2D art for this game instead of any programming.",
+        "Platforms": [
+            "Windows PC",
+            "Mac"
+        ],
+        "JamDetails": [
+            "Theme: This Game is a Liar",
+            "Date: August 24-31, 2019",
+            "Duration: 7 days"
+        ]
+    },
+    {
+        "id": "3",
+        "Title": "Bot Boy",
+        "Subtitle": "Personal Game Jam",
+        "Images": [
+            "BotBoy.png",
+            "BotBoy.gif"
+        ],
+        "Links": [
+            {
+                "Name": "[No Links]",
+                "url": ""
+            }
+        ],
+        "Details": "2D Platformer where time freezes",
+        "Platforms": [
+        ],
+        "JamDetails": [
+            "Theme: Time",
+            "Date: July 24-26, 2019",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "2",
+        "Title": "Cosmic Conflict",
+        "Subtitle": "GAMED Club Jam",
+        "Images": [
+            "CosmicConflict.png",
+            "CosmicConflict.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/cosmic-conflict"
+            }
+        ],
+        "Details": "Endless space tower defense! This was one of our favorites, and was presented at M+Dev during its first year of the Indie Game Showcase in January 2020!",
+        "Platforms": [
+            "WebGL",
+            "Mobile* (no longer available)"
+        ],
+        "JamDetails": [
+            "Theme: Space",
+            "Date: April 5-7, 2019",
+            "Duration: 48 hours"
+        ]
+    },
+    {
+        "id": "1",
+        "Title": "Far From Home",
+        "Subtitle": "Global Game Jam 2019",
+        "Images": [
+            "FarFromHome.png",
+            "FarFromHome.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Download on itch.io",
+                "url": "https://thezbilldyl.itch.io/far-from-home"
+            },
+            {
+                "Name": "View on GlobalGameJam",
+                "url": "https://v3.globalgamejam.org/2019/games/far-home-17"
+            }
+        ],
+        "Details": "My first game jam! I spent 48 hours making a light flicker like a torch and a repeatable grass tile.",
+        "Platforms": [
+            "Windows PC"
+        ],
+        "JamDetails": [
+            "Theme: What does home mean to you?",
+            "Date: January 25-27, 2019",
+            "Duration: 48 hours"
+        ]
+    }
+]
