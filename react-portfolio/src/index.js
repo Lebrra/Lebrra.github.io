@@ -6,20 +6,25 @@ import About from './Portfolio/About';
 import Skills from './Portfolio/Skills';
 import Games from './Portfolio/GameProjects';
 import Links from './Portfolio/Links';
+import Divider from './Portfolio/Divider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import cat from './Portfolio/Games/none.png';
+import { Image } from 'react-bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Intro />
-    <div className="text-block-spacer"/>
+    <Divider />
     <About />
-    <div className="text-block-spacer"/>
+    <Divider />
     <Skills />
-    <div className="text-block-spacer"/>
+    <Divider />
     <Games />
-    <div className="text-block-spacer"/>
+    <Divider />
 
+    <Image src={cat} style={{width: "300px", marginBottom: "100px", display: "flex", justifySelf: "center"}} />
     <Links />
   </React.StrictMode>
 );

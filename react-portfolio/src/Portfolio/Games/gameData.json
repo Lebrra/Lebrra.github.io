@@ -2,64 +2,90 @@
     {
         "id": "1",
         "Title": "RoboCo Series",
-        "Subtitle": "Filament Games",
+        "Subtitle": "Filament Games & Meta",
         "Images": [
+            "myrob.png",
+            "myrob.mp4",
             "sar.png",
-            "sar.gif",
-            "myrob.png"
+            "sar.gif"
         ],
         "Links": [
             {
-                "Name": "RoboCo Site",
-                "url": ""
+                "Name": "RoboCo",
+                "url": "https://roboco.co/"
             },
             {
-                "Name": "RoboCo on Steam",
-                "url": ""
+                "Name": "Some Assembly Required",
+                "url": "https://www.meta.com/experiences/2736813653063231/"
             },
             {
-                "Name": "Some Assembly Required on Meta Quest",
-                "url": ""
-            },
-            {
-                "Name": "My Robot on Meta Quest",
-                "url": ""
+                "Name": "My Robot",
+                "url": "https://www.meta.com/en-gb/experiences/my-robot/25733952812884739/"
             }
         ],
-        "Details": "long text here",
-        "Platforms": "Steam (PC), Meta Quest (VR)",
-        "Date": "details on timing of this project here"
+        "Details": "RoboCo is a PC sandbox robotics game built with the purpose of giving students or people of all ages access to the world of robotics. Today, the world of RoboCo has expanded far beyond its early access Steam launch. Some Assembly Required is RoboCo's partner title released on the Meta Quest 2 & 3 on May 16th, 2024, and MyRobot is an MR spinoff also for the Meta Quest 2 & 3 including step-by-step instructions on how to build a robot.\nFor two years of my time at Filament Games, I worked with the incredible RoboCo team. Together, I helped push several patches to RoboCo on Steam (2023), launch Some Assembly Required for the Meta Quest 2 & 3 (launched May 16th, 2024), and contribute major systems to MyRobot (launched October 2nd, 2025) including the prop placement system in MR, some editor tools for generating robot kits, and the VR out of bounds visibility. I am so proud of my contributions to the difficult problems we faced in these incredible games, and I cannot wait to use these skills on future projects!",
+        "Platforms": [
+            "Steam (PC)", 
+            "Meta Quest (VR)"
+        ],
+        "Date": "2023 & 2024"
     }, 
     {
         "id": "2",
         "Title": "People's Pie",
         "Subtitle": "Filament Games & iCivics",
         "Images": [
+            "PeoplesPie.png",
+            "PeoplesPie.gif"
         ],
         "Links": [
             {
                 "Name": "Play for Free!",
-                "url": ""
+                "url": "https://www.icivics.org/games/peoples-pie"
             }
         ],
-        "Details": "long text here",
-        "Platforms": "WebGL, Android, iOS",
-        "Date": "details on timing of this project here"
+        "Details": "People's Pie is my first professionally released title! This educational game teaches kids the basics of how US government funds are utilized.\nThis was my first lead engineer project at Filament Games working with the fantastic people at iCivics.\nPeople's Pie was awarded a GEE! Award in 2023 under the category Formal Learning.",
+        "Platforms": [
+            "WebGL", 
+            "Android", 
+            "iOS"
+        ],
+        "Date": "Summer 2022"
     }, 
     {
         "id": "3",
         "Title": "Mindful Market™",
-        "Subtitle": "Filament Games & Penumbra",
+        "Subtitle": "Filament Games & Penumbra, Inc",
         "Images": [
+            "MindfulMarket.png",
+            "MindfulMarket.gif"
         ],
         "Links": [
             {
                 "Name": "Filament Portfolio Showcase",
-                "url": ""
+                "url": "https://www.filamentgames.com/project/mindful-market/"
             }
         ],
-        "Details": "long text here",
-        "Platforms": "REAL® System (VR)",
-        "Date": "details on timing of this project here"
+        "Details": "Mindful Market™ is an application of the REAL® System developed by Penumbra, Inc, which utilizes VR for various therapy solutions. Mindful Market is a project built in Unreal that helps patients build cognitive skills through several minigames.\nI did several maintenance and quality of life updates and also added a new feature that allows the patient to stand while playing any activity.",
+        "Platforms": ["REAL® System (VR)"],
+        "Date": "Spring 2022"
+    },
+    {
+        "id": "4",
+        "Title": "Crafted Chimera",
+        "Subtitle": "Game Jam",
+        "Images": [
+            "CraftChim.png",
+            "CraftChim.gif"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/crafted-chimera"
+            }
+        ],
+        "Details": "Crafted Chimera was created and won first place in the IGDA Foundation Game Jam in 2022 with the theme 'combination'. In this game, you can piece together your own creature and use unique abilities from each body part to fight other crazy combinations! Winning battles unlocks new parts to add to your own creature.\nI worked in a group of six to bring Crafted Chimera to life; I personally created the animal body part conjoining, dynamic tweening animations, and the adventure mode!",
+        "Platforms": ["WebGl", "Android (local builds)"],
+        "Date": "October 2022"
     }
 ]
