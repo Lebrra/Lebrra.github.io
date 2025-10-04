@@ -14,6 +14,7 @@ function Links() {
     const [screenSize, setScreenSize] = useState('');
     const [animating, setAnimating] = useState(false);
     const [delayedOpenNav, setDelayedOpenNav] = useState(false);
+    const [hoverID, setHoverID] = useState("none");
 
     useEffect(() => {
       const handleResize = () => {
@@ -97,6 +98,27 @@ function Links() {
         marginBottom: `${openNav ? 0 : -15}%`,
         opacity: `${openNav ? 100 : 0}%`,
         transition: "margin-bottom 0.5s cubic-bezier(0.51,-0.23,0.54,1.26),  opacity 0.5s ease-in-out",
+        minHeight: "100px"
+    }
+
+    function hoverState(id){
+        if (id === hoverID){
+            return vertical ? iconHoverVert : iconHoverHor;
+        }
+        else return iconHoverDefault;
+    }
+
+    const iconHoverVert = {
+        transition: "0.15s ease-in-out",
+        boxShadow: "2px 0px 7px black, 2px 0px 20px #e6d051"
+    }
+    const iconHoverHor = {
+        transition: "0.15s ease-in-out",
+        boxShadow: "2px 0px 7px black, 2px 0px 20px #e6d051"
+    }
+    const iconHoverDefault = {
+        transition: "0.15s ease-in-out",
+        boxShadow: "2px 0px 7px black, 2px 0px 40px black"
     }
 
     function ExpandedIcons(){
@@ -105,7 +127,7 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="mailto:scout1665@gmail.com" title="Email Leah">
-                    <Image src={email} className="link-img" alt='Email' fluid/>
+                    <Image src={email} className="link-img" alt='Email' fluid style={hoverState("email")} onMouseEnter={() => setHoverID("email")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }  
             </Col>
@@ -113,7 +135,7 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="https://lebrra.itch.io/" target='_blank' rel="noreferrer" title="Leah's itch.io page">
-                    <Image src={itch} className="link-img" alt="itch.io" fluid/>
+                    <Image src={itch} className="link-img" alt="itch.io" fluid style={hoverState("itch")} onMouseEnter={() => setHoverID("itch")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
             </Col>
@@ -121,7 +143,7 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="https://www.linkedin.com/in/leah-blasczyk-0b25b3198/" target='_blank' rel="noreferrer" title="Leah on LinkedIn">
-                    <Image src={linkedin} className="link-img" alt='LinkedIn' fluid/>
+                    <Image src={linkedin} className="link-img" alt='LinkedIn' fluid style={hoverState("link")} onMouseEnter={() => setHoverID("link")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
             </Col>
@@ -129,7 +151,7 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="https://github.com/Lebrra" target='_blank' rel="noreferrer" title="Leah's GitHub page">
-                    <Image src={github} className="link-img" alt='GitHub' fluid/>
+                    <Image src={github} className="link-img" alt='GitHub' fluid style={hoverState("git")} onMouseEnter={() => setHoverID("git")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
             </Col>
@@ -137,7 +159,7 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="https://twitter.com/lebrra_" target='_blank' rel="noreferrer" title="Leah on Twitter">
-                    <Image src={tweet} className="link-img" alt='Twitter' fluid/>
+                    <Image src={tweet} className="link-img" alt='Twitter' fluid style={hoverState("twi")} onMouseEnter={() => setHoverID("twi")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
             </Col>
@@ -145,21 +167,21 @@ function Links() {
             {
                 delayedOpenNav ? 
                 <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
-                    <Image src={resume} className="link-img" alt='Resume' fluid/>
+                    <Image src={resume} className="link-img" alt='Resume' fluid style={hoverState("res")} onMouseEnter={() => setHoverID("res")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
             </Col>
         </>
     }
 
-  return <div className="fixed-bottom">
-            <Navbar>
+  return <div className="fixed-bottom" style={{minHeight: "10%"}}>
+            <Navbar fluid>
                 <Container style={{justifyContent: "flex-end"}}>
                 <Row style={vertical ? expandVertical : expandHorizontal}>
                     {ExpandedIcons()}
                     <Col xs={4} sm={2} lg={1}>
                         <div style={vertical ? arrowStateVert : arrowStateHor}>
-                            <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => updateOpen(!openNav)}/>
+                            <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => updateOpen(!openNav)} style={hoverState("arr")} onMouseEnter={() => setHoverID("arr")} onMouseLeave={() => setHoverID("none")}/>
                         </div>
                     </Col>
                 </Row>

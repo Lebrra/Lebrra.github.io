@@ -32,6 +32,14 @@ function Skills() {
     var squishCols = (screenSize === "xs" || screenSize === "sm" || screenSize === "md" || screenSize === "lg") ? "skills-col-squish" : "skills-col";
     var addMargin = (screenSize === "md" || screenSize === "lg") ? "30%" : "0%";
 
+    const dividerStyle = {
+      marginTop: "4px", 
+      marginBottom: "5px", 
+      borderBottom: '5px dotted #383838ff', 
+      width: '70px',
+      marginLeft: squishCols==="skills-col" ? "15px" : "0"
+    };
+
   return <Container>
         <Row>
             <Col className="header" id={alignRight} sm={12} md={3}>
@@ -42,39 +50,89 @@ function Skills() {
                 <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Languages
                 </Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>C#</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>C++/C</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Python</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>JavaScript</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>C#</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>C++/C</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Python</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>JavaScript</p>
+                </Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1}>
                 <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Engine/Programs
                 </Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Unity</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Visual Studio Code</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>JetBrains Rider</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Unreal Engine 4</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Adobe Suite</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Blender/Maya</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Unity</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Visual Studio Code</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>JetBrains Rider</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Unreal Engine 4</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Adobe Suite</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Blender/Maya</p>
+                </Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1} style={{marginLeft: addMargin}}>
                 <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Tools
                 </Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Git</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Jira</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>GitLab CI</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Jenkins</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Git</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Jira</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>GirLab CI</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Jenkins</p>
+                </Row>
             </Col>
             <Col className={squishCols} sm={12} md={3} xl={1}>
                 <Row className="skills-header" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
                     Proficiencies
                 </Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>User Interface/Experience</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Gameplay</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Accessibility/WCAG</Row>
-                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>Devops</Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center", textAlign: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>User Interface/Experience</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Gameplay</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Accessibility/WCAG</p>
+                  <div style={dividerStyle}/>
+                </Row>
+                <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>Devops</p>
+                </Row>
             </Col>
         </Row>
     </Container>
