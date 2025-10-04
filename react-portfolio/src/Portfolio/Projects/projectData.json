@@ -1,0 +1,78 @@
+[
+    {
+        "id": "1",
+        "Title": "Reference Work",
+        "Subtitle": "none",
+        "Images": [
+            "ReferenceWork.png",
+            "drawing.mp4"
+        ],
+        "Links": [
+            {
+                "Name": "GitHub Repo",
+                "url": "https://github.com/Lebrra/reference-work"
+            }
+        ],
+        "Details": "A small repository of systems I have worked on.",
+        "Platforms": [],
+        "Date": "Varied - see repo"
+    }, 
+    {
+        "id": "2",
+        "Title": "Fighting Foliage",
+        "Subtitle": "UW Whitewater Class Project",
+        "Images": [
+            "FightingFoliage.png",
+            "FightingFoliageVideo.MOV"
+        ],
+        "Links": [
+            {
+                "Name": "Watch on YouTube",
+                "url": "https://youtu.be/gLDMQHyH3ss"
+            }
+        ],
+        "Details": "A Rock-Paper-Scissors clone create with a Max Patch and Makey-Makey controllers.",
+        "Platforms": [
+        ],
+        "Date": "Fall 2018"
+    }, 
+    {
+        "id": "3",
+        "Title": "Brick Break",
+        "Subtitle": "UW Madison Class Project",
+        "Images": [
+            "BrickBreak.png"
+        ],
+        "Links": [
+            {
+                "Name": "Play on itch.io",
+                "url": "https://lebrra.itch.io/brick-break"
+            }
+        ],
+        "Details": "WebGL Brick Breaker inspired by the original iPod Nano brick-breaker: Vortex",
+        "Platforms": ["WebGL", "Android (local build)"],
+        "Date": "Spring 2024"
+    },
+    {
+        "id": "5",
+        "Title": "Arduino Clock Watchers",
+        "Subtitle": "UW Whitewater Class Project",
+        "Images": [
+            "ClockWatchers.jpeg",
+            "Arduino_Clock_Watchers_Game.mp4"
+        ],
+        "Links": [
+            {
+                "Name": "Writeup on CircuitMaker",
+                "url": "https://workspace.circuitmaker.com/Projects/Details/LeahB/Clock-Watchers-Game"
+            },
+            {
+                "Name": "Watch Demo on YouTube",
+                "url": "https://www.youtube.com/watch?v=toq-e9w-Z7I"
+            }
+        ],
+        "Details": "An AR experience created to learn about the UW Whitewater campus in AR. Made by the Digital Media Lab.",
+        "Platforms": ["Arduino"],
+        "Date": "Fall 2020"
+    }
+]
