@@ -2,11 +2,11 @@
 import Project from './ProjectModal';
 import '../App.css';
 import { useState, useEffect } from "react";
-import { Image, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import gameData from './Games/gameData.json';
 
 
-function Games(params) {
+function Games() {
     // todo: there's totally a way to universalize this for all scripts
     const [screenSize, setScreenSize] = useState('');
     useEffect(() => {
@@ -52,29 +52,36 @@ function Games(params) {
     // struct (params) needs: title, subtitle, date, pictures list, description, ?
     const data = gameData;
 
+    function CreateGames(data, index){
+      data.Folder = "Games";
+      return <Col className="project-block" sm={12} md={6} lg={3} key={data.id} style={
+                      // if med then we need to align all but first
+                      // else if large+ need to align every other after 1
+                      // else none
+                      screenSize === "md" && index > 0 ? 
+                      {
+                        marginLeft: `${percent}`,
+                        padding: "0%",
+                        marginBottom: screenSize === "xs" || screenSize === "sm" || screenSize === "md" ? "9%" : "4%"
+                      } :
+                      (screenSize === "lg" || screenSize === "xl" || screenSize === "xxl") && (index > 1 && index % 2 === 0) ?
+                      {
+                        marginLeft: `${percent}`,
+                        padding: "0%", 
+                        marginBottom: screenSize === "xs" || screenSize === "sm" || screenSize === "md" ? "9%" : "4%"
+                      } : {padding: "0%", marginBottom: screenSize === "xs" || screenSize === "sm" || screenSize === "md" ? "9%" : "4%"}
+                    }>
+                    <Project fluid {...data} />
+                </Col>
+    }
+
   return <Container>
         <Row>
             <Col className="header" id={alignRight} sm={12} md={3}>
                 Game Projects
             </Col>
             {
-                data.map((c, i) => <Col className="project-block" sm={12} md={6} lg={3} key={c.id} style={
-                      // if med then we need to align all but first
-                      // else if large+ need to align every other after 1
-                      // else none
-                      screenSize === "md" && i > 0 ? 
-                      {
-                        marginLeft: `${percent}`,
-                        padding: "0%"
-                      } :
-                      (screenSize === "lg" || screenSize === "xl" || screenSize === "xxl") && (i > 1 && i % 2 === 0) ?
-                      {
-                        marginLeft: `${percent}`,
-                        padding: "0%"
-                      } : {padding: "0%"}
-                    }>
-                    <Project fluid {...c} />
-                </Col>)
+                data.map(CreateGames)
             }
         </Row>
     </Container>

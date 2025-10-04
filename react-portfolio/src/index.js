@@ -5,12 +5,13 @@ import Intro from './Portfolio/Intro';
 import About from './Portfolio/About';
 import Skills from './Portfolio/Skills';
 import Games from './Portfolio/GameProjects';
+import Projects from './Portfolio/OtherProjects';
+import Outro from './Portfolio/Outro';
 import Links from './Portfolio/Links';
 import Divider from './Portfolio/Divider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import cat from './Portfolio/Games/none.png';
-import { Image } from 'react-bootstrap';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,8 +24,11 @@ root.render(
     <Divider />
     <Games />
     <Divider />
+    <Projects />
+    <Divider />
 
-    <Image src={cat} style={{width: "300px", marginBottom: "100px", display: "flex", justifySelf: "center"}} />
+
+    <Outro />
     <Links />
   </React.StrictMode>
 );

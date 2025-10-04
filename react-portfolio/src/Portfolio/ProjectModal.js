@@ -38,16 +38,19 @@ function Project(params) {
 
   const pictures = params.Images;
   const cover = pictures.length > 0 ? pictures[0] : "none.png";
+  const containingFolder = `./${params.Folder}/`;
 
   const blockHoverOff = {
-    transition: "0.15s ease-in-out",
+    transition: "boxShadow 0.15s ease-in-out",
     boxShadow: "2px 0px 7px black, 2px 0px 40px black",
-    cursor: "pointer"
+    cursor: "pointer",
+    height: "100%"
   }
   const blockHoverOn = {
-    transition: "0.15s ease-in-out",
+    transition: "boxShadow 0.15s ease-in-out",
     boxShadow: "2px 0px 7px black, 2px 0px 20px #e6d051",
-    cursor: "pointer"
+    cursor: "pointer",
+    height: "100%"
   }
 
   const dividerStyle = {
@@ -61,7 +64,7 @@ function Project(params) {
     <>
         <div onClick={handleShow} style={hover ? blockHoverOn : blockHoverOff} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <p className='project-block-title'>{params.Title}</p>
-            <Image src={require(`./Games/${cover}`)} alt="temp" title={params.Title} style={{width: "100%"}}/>
+            <Image src={require(`${containingFolder}${cover}`)} alt="temp" title={params.Title} style={{width: "100%"}}/>
         </div>
 
       <Modal show={show} onHide={handleClose} centered size="xl">
@@ -72,10 +75,15 @@ function Project(params) {
           <Container>
             <Row>
                 <Col sm={12} lg={5}>
-                    <p className='project-subtitle'>
-                      {params.Subtitle}
-                    </p>
-                    <div style={dividerStyle}/>
+                {
+                  params.Subtitle == "none" ? <></> :
+                  <>
+                  <p className='project-subtitle'>
+                    {params.Subtitle}
+                  </p>
+                  <div style={dividerStyle}/>
+                  </>
+                }
                     <p style={{marginRight: oneRow ? "auto" : "40px"}}>
                       {
                         params.Details.split("\n").map((c, i) => <p key={i} className='project-text'>{c}</p>)
@@ -87,13 +95,17 @@ function Project(params) {
                       <li>{params.Date}</li>
                     </ul>
                     <div style={dividerStyle}/>
-                    <p className='project-header'>Platforms:</p>
-                    <ul>
-                      {
-                        params.Platforms.map((c, i) => <li key={i}>{c}</li>)
-                      }
-                    </ul>
-                    <div style={dividerStyle}/>
+                    {
+                      params.Platforms.length > 0 ? <>
+                      <p className='project-header'>Platforms:</p>
+                        <ul>
+                          {
+                            params.Platforms.map((c, i) => <li key={i}>{c}</li>)
+                          }
+                        </ul>
+                        <div style={dividerStyle}/></> : <></>
+                    }
+                    
                     <p className='project-header'>Links:</p>
                     <ul>
                       {
@@ -109,9 +121,9 @@ function Project(params) {
                     {
                       pictures.map((c, i) => <Row style={{padding: "0%", marginTop: "4%"}} key={i} className='modal-images'>
                         {
-                           c.substr(c.length - 3) === "mp4" ? 
-                              <video controls src={require(`./Games/${c}`)} type="video/mp4" alt={c} title={c} fluid style={{padding: "0%"}} /> :
-                              <Image src={require(`./Games/${c}`)} alt={c} title={c} fluid style={{padding: "0%"}} />
+                           c.substr(c.length - 3) === "mp4" || c.substr(c.length - 3) === "MOV" ? 
+                              <video controls src={require(`${containingFolder}${c}`)} type="video/mp4" alt={c} title={c} fluid style={{padding: "0%"}} /> :
+                              <Image src={require(`${containingFolder}${c}`)} alt={c} title={c} fluid style={{padding: "0%"}} />
                         }
                       </Row>)
                     }
