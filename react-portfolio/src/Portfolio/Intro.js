@@ -1,4 +1,4 @@
-import face from './faceCircle.png';
+import face from './face_V2.png';
 import { Container, Row, Col, Image } from "react-bootstrap";
 import '../App.css';
 import { useState } from 'react';
