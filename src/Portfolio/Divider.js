@@ -6,7 +6,8 @@ function Divider() {
       marginBottom: "5px", 
       borderBottom: '5px dotted #0c0c0cff', 
       width: '60%',
-      justifySelf: "center"
+      justifySelf: "center",
+      margin: "0 auto"
     };
     
   return <>

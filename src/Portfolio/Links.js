@@ -98,7 +98,7 @@ function Links() {
         marginBottom: `${openNav ? 0 : -15}%`,
         opacity: `${openNav ? 100 : 0}%`,
         transition: "margin-bottom 0.5s cubic-bezier(0.51,-0.23,0.54,1.26),  opacity 0.5s ease-in-out",
-        minHeight: "100px"
+        minHeight: "60px"
     }
 
     function hoverState(id){
@@ -123,7 +123,7 @@ function Links() {
 
     function ExpandedIcons(){
         return <>
-            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="mailto:scout1665@gmail.com" title="Email Leah">
@@ -131,7 +131,7 @@ function Links() {
                 </a> : <></>
             }  
             </Col>
-            <Col xs={4} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="https://lebrra.itch.io/" target='_blank' rel="noreferrer" title="Leah's itch.io page">
@@ -139,7 +139,7 @@ function Links() {
                 </a> : <></>
             }
             </Col>
-            <Col xs={4} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1}  style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="https://www.linkedin.com/in/leah-blasczyk-0b25b3198/" target='_blank' rel="noreferrer" title="Leah on LinkedIn">
@@ -147,7 +147,7 @@ function Links() {
                 </a> : <></>
             }
             </Col>
-            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="https://github.com/Lebrra" target='_blank' rel="noreferrer" title="Leah's GitHub page">
@@ -155,7 +155,7 @@ function Links() {
                 </a> : <></>
             }
             </Col>
-            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="https://twitter.com/lebrra_" target='_blank' rel="noreferrer" title="Leah on Twitter">
@@ -163,7 +163,7 @@ function Links() {
                 </a> : <></>
             }
             </Col>
-            <Col xs={4} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
+            <Col xs={3} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
                 <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
@@ -179,7 +179,7 @@ function Links() {
                 <Container style={{justifyContent: "flex-end"}}>
                 <Row style={vertical ? expandVertical : expandHorizontal}>
                     {ExpandedIcons()}
-                    <Col xs={4} sm={2} lg={1}>
+                    <Col xs={3} sm={2} lg={1}>
                         <div style={vertical ? arrowStateVert : arrowStateHor}>
                             <Image src={arrow} className="link-img" alt={openNav ? "Close Links" : "Open Links"} title={openNav ? "Close Links" : "Open Links"} fluid onClick={() => updateOpen(!openNav)} style={hoverState("arr")} onMouseEnter={() => setHoverID("arr")} onMouseLeave={() => setHoverID("none")}/>
                         </div>

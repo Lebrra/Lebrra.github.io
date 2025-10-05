@@ -74,7 +74,7 @@ p, li {
   font-size: 120%;
   color: #e6d051;
   font-family: 'Cabin Sketch', sans-serif;
-  letter-spacing: 110%;
+  letter-spacing: 1.5px;
 }
 
 .text-block-spacer {
@@ -155,7 +155,7 @@ div.intro {
   color: white;
   font-family: 'Cabin', sans-serif;
   text-shadow: 2px 2px 3px #000000, 5px 5px 9px #000000;
-  letter-spacing: 110%;
+  letter-spacing: 1px;
   padding-bottom: 20px;
 }
 
