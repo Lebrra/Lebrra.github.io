@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d8b2d42.css",
-    "main.js": "/static/js/main.d76375d6.js",
+    "main.css": "/static/css/main.d57a44bc.css",
+    "main.js": "/static/js/main.5d43b86f.js",
     "static/media/MindfulMarket.gif": "/static/media/MindfulMarket.597f65b91a2d533f075c.gif",
     "static/media/FarFromHome.gif": "/static/media/FarFromHome.852b73686c00a7041432.gif",
     "static/media/OverTheTop.gif": "/static/media/OverTheTop.eefd525ede6f1a6879b2.gif",
@@ -79,11 +79,11 @@
     "static/media/arrow.png~": "/static/media/arrow.118e2a997ac929c4191e.png~",
     "static/media/linkedin.png": "/static/media/linkedin.d8328ef2891745dd4472.png",
     "index.html": "/index.html",
-    "main.1d8b2d42.css.map": "/static/css/main.1d8b2d42.css.map",
-    "main.d76375d6.js.map": "/static/js/main.d76375d6.js.map"
+    "main.d57a44bc.css.map": "/static/css/main.d57a44bc.css.map",
+    "main.5d43b86f.js.map": "/static/js/main.5d43b86f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d8b2d42.css",
-    "static/js/main.d76375d6.js"
+    "static/css/main.d57a44bc.css",
+    "static/js/main.5d43b86f.js"
   ]
 }
