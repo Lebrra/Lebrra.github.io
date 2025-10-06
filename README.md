@@ -18,8 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm deploy`
+### `npm run deploy`
 
-Ref [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment/) for online instructions.
+Ref [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment/) for further instructions.
 
-The only way I got this working was by running 'npm deploy' on the same branch I can locally test 'npm start' on, then finding the folder that matches my files in my personal Documents/WebsiteTemp (its something super long with !! in it)
+Run this (or npm run build probably works too - idk what deploy specifically does because it doesn't work without help). Then take contents from the build folder and update gh_pages with these files.
