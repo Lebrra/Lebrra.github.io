@@ -55,9 +55,13 @@ function About() {
                     We make 'Games for Good' that help children, students, patients, and people better their lives through games.
                 </p>
                 <p>
-                    To continue learning in the world of software development, I began my Master's Degree in Computer Science 
-                    at the <strong className="mad">University of Wisconsin - Madison</strong> in the fall of 2023 and plan to graduate in Fall 2025. 
-
+                    To continue learning in the world of software development, I persued my Master's Degree in Computer Science 
+                    at the <strong className="mad">University of Wisconsin - Madison</strong>, graduating in Fall 2025.
+                    This experience taught me so much technically (C++, research, systems engineering) and mentally (time management, mental load, communication) 
+                    that I will continue to hone for the rest of my career.
+                </p>
+                <p>
+                    Today, I am deciding which side quest comes one from my anticipated log of board games, music, and crafts, or something entirely new!
                 </p>
             </Col>
         </Row>
