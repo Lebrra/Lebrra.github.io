@@ -166,7 +166,7 @@ function Links() {
             <Col xs={3} sm={2} lg={1} style={vertical ? iconGrowStateVert : iconGrowStateHor}>
             {
                 delayedOpenNav ? 
-                <a href="Resume/Blasczyk_Resume.pdf" download={"BLasczyk_Resume.pdf"} title="Download Resume">
+                <a href={`${process.env.PUBLIC_URL}/Resume/Blasczyk_Resume.pdf`} download={"BLasczyk_Resume.pdf"} title="Download Resume">
                     <Image src={resume} className="link-img" alt='Resume' fluid style={hoverState("res")} onMouseEnter={() => setHoverID("res")} onMouseLeave={() => setHoverID("none")}/>
                 </a> : <></>
             }
