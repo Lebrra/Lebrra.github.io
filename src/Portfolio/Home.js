@@ -5,6 +5,7 @@ import Games from './GameProjects';
 import Projects from './OtherProjects';
 import Outro from './Outro';
 import Links from './Links';
+import Awards from './Awards';
 import Divider from './Divider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +20,8 @@ function Home(){
         <Games />
         <Divider />
         <Projects />
+        <Divider />
+        <Awards />
         <Divider />
 
 

@@ -107,7 +107,7 @@ function Skills() {
                   <div style={dividerStyle}/>
                 </Row>
                 <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
-                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>GirLab CI</p>
+                  <p style={{textAlign: squishCols==="skills-col" ? "left" : "center", marginBottom: "0"}}>GitLab CI</p>
                   <div style={dividerStyle}/>
                 </Row>
                 <Row className="skills-text" style={{justifyContent: squishCols==="skills-col" ? "left" : "center"}}>
