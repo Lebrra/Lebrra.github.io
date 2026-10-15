@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Portfolio/Home";
 import GameJams from "./Portfolio/GameJams";
 import BrickDemo from "./Portfolio/Demos/BrickDemo";
@@ -19,7 +19,7 @@ const Wrapper = ({children}) => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <Wrapper>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -29,6 +29,6 @@ root.render(
         <Route path="*" element={<Home />}/>
       </Routes>
     </Wrapper>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
