@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Portfolio/Home";
 import GameJams from "./Portfolio/GameJams";
+import BrickDemo from "./Portfolio/Demos/BrickDemo";
+import MichiganAIDemo from "./Portfolio/Demos/MichiganAIDemo";
 import { useLayoutEffect } from 'react';
 
 // https://stackoverflow.com/questions/70193712/how-to-scroll-to-top-on-route-change-with-react-router-dom-v6
@@ -22,6 +24,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/GameJams" element={<GameJams />}/>
+        <Route path="/Demos/BrickBreaker" element={<BrickDemo />}/>
+        <Route path="/Demos/MichiganAI_Snapshot" element={<MichiganAIDemo />}/>
         <Route path="*" element={<Home />}/>
       </Routes>
     </Wrapper>
