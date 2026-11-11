@@ -20,9 +20,11 @@ You may also see any lint errors in the console.
 ### `npm run build`
 
 Builds files locally - they still need to be pushed to gh-pages branch (do this with deploy below)
+If build using this, then take contents from the build folder and update gh_pages with these files.
 
 ### `npm run deploy`
 
+Builds and deploys all in one go (no further steps needed!) see Actions to watch for next deployment.
 Ref [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment/) for further instructions.
 
-Run this (or npm run build probably works too - idk what deploy specifically does because it doesn't work without help). Then take contents from the build folder and update gh_pages with these files.
+
