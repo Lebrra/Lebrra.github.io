@@ -51,8 +51,8 @@ function About() {
                     I loved pushing my self to be a part of something great. I love video games, and I have always wanted to be the one behind a game that brings someone joy.
                 </p>
                 <p>
-                    I am currently a <strong>Game Engineer</strong> at <strong><a id="jobLink" href="https://www.filamentgames.com/" target="_blank" rel="noreferrer">Filament Games</a></strong>! 
-                    We make 'Games for Good' that help children, students, patients, and people better their lives through games.
+                    After my undergrad, I landed a career as a <strong>Game Engineer</strong> at <strong><a id="jobLink" href="https://www.filamentgames.com/" target="_blank" rel="noreferrer">Filament Games</a></strong>! 
+                    Filament makes 'Games for Good' that help children, students, patients, and people better their lives through games.
                 </p>
                 <p>
                     To continue learning in the world of software development, I persued my Master's Degree in Computer Science 
@@ -61,7 +61,12 @@ function About() {
                     that I will continue to hone for the rest of my career.
                 </p>
                 <p>
-                    Today, I am deciding which side quest comes one from my anticipated log of board games, music, and crafts, or something entirely new!
+                    Today, I remain at UW Madison to work as a <strong>Software/Game Engineer</strong> at <strong><a id="jobLink" href="https://fielddaylab.wisc.edu/" target="__blank" rel="noreferrer">
+                    Field Day</a></strong>, a small educational games studio based right here at the University where I continue to educate through games!
+                </p>  
+                <br />
+                <p>
+                    Beyond my career, I am continuing to deciding which side quest comes one from my anticipated log of board games, music, and crafts, or something entirely new!
                 </p>
             </Col>
         </Row>
